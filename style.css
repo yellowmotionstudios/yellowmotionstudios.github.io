@@ -1,0 +1,30 @@
+/* Yellow Motion Studios site, in the "Airway Chart" look of its first channel (styles/airway-chart/STYLE.md). */
+:root {
+  --paper: #E4EDF1; --grid: #C7D7E0; --ink: #13294B; --soft: #4A6380; --route: #B5176F; --amber: #F4C95D; --card: #FFFFFF;
+}
+* { box-sizing: border-box; }
+html { background: var(--paper); }
+body {
+  margin: 0; color: var(--ink); font: 17px/1.6 "Bahnschrift", "DIN Alternate", "Segoe UI", system-ui, sans-serif;
+  background-color: var(--paper);
+  background-image: linear-gradient(var(--grid) 1px, transparent 1px), linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+header, main, footer { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+header { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap;
+  padding-top: 28px; padding-bottom: 10px; border-bottom: 2px solid var(--soft); }
+header a { color: var(--soft); text-decoration: none; letter-spacing: 3px; font-weight: 600; text-transform: uppercase; font-size: 14px; }
+header nav a { margin-left: 16px; color: var(--route); }
+header nav a:first-child { margin-left: 0; }
+main { padding-top: 28px; padding-bottom: 28px; }
+.card { background: var(--card); border: 4px solid var(--ink); border-radius: 12px; box-shadow: 8px 8px 0 var(--route);
+  padding: 22px 26px; margin-bottom: 28px; }
+h1 { font-size: 40px; line-height: 1.1; margin: 0 0 12px; letter-spacing: 1px; }
+h2 { font-size: 22px; margin: 26px 0 6px; letter-spacing: 1px; text-transform: uppercase; }
+h2:first-child { margin-top: 0; }
+a { color: var(--route); }
+.readout { display: inline-block; background: #0F1D33; color: var(--amber); font-weight: 700; letter-spacing: 3px;
+  border-radius: 10px; padding: 4px 14px; font-size: 18px; }
+.muted { color: var(--soft); font-size: 15px; }
+footer { padding-bottom: 40px; color: var(--soft); font-size: 14px; }
+@media (max-width: 520px) { h1 { font-size: 30px; } .card { padding: 18px; box-shadow: 5px 5px 0 var(--route); } }
