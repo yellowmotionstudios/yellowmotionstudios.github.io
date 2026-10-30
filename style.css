@@ -19,7 +19,7 @@ a { color: var(--yellow); }
   -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
 .top .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; gap: 16px; }
 .brand { display: flex; align-items: center; gap: 10px; color: var(--text); text-decoration: none; font-weight: 700; letter-spacing: 0.2px; }
-.brand svg { width: 30px; height: 30px; flex-shrink: 0; }
+.brand img { width: 32px; height: 32px; flex-shrink: 0; display: block; }
 .top nav { display: flex; gap: 22px; }
 .top nav a { color: var(--muted); text-decoration: none; font-size: 15px; font-weight: 600; }
 .top nav a:hover { color: var(--yellow); }
@@ -138,3 +138,6 @@ footer a:hover { color: var(--yellow); }
   font-size: 13px; font-weight: 700; letter-spacing: 0.6px; }
 .note .links { font-size: 15px; }
 .note .links a { color: var(--yellow); font-weight: 600; }
+
+/* Full logo (dark text) at the top of the light legal pages. */
+.doc-logo { display: block; width: 280px; max-width: 70%; height: auto; margin: 0 0 22px; }
